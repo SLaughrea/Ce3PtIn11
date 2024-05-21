@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="0.9.9.12" dpi="96" arch="Gnu64" script="muParser" windows="5" expand="1">
+	<window type="1" name="zerofield_SL_internFld" date="2459668.4488865" x="0" y="0" w="1004" h="304" label="/home/e1952/SL/internFld/zerofield_SL_internFld" title="2">
+		<tab rows="7" cols="48" labels="0">
+			<col name="dataT" type="6" num="0" prec="6" plot="2" width="100" stat="0" data="4.012;2.05;0.999;0.228;0.019;0.423;0.712;"/>
+			<col name="dataTErr" type="6" num="0" prec="6" plot="2" width="100" stat="0" data="0;0;0;0;0;0;0;"/>
+			<col name="alpha" type="6" num="0" prec="13" plot="1" width="100" stat="0" comment="alpha" data="0.9954;1.0444;1.0651;1.0653;1.0588;1.0687;1.045;"/>
+			<col name="alphaPosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="alphaPosErr" data="0.0016;0.0026;0.0032;0.0026;0.0029;0.0027;0.01;"/>
+			<col name="alphaNegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="alphaNegErr" data="0.0016;0.0026;0.0038;0.0027;0.0033;0.0036;0.016;"/>
+			<col name="asy" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="asy" data="0.0132;0.0616;0.068;0.0677;0.06;0.0679;0.045;"/>
+			<col name="asyPosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="asyPosErr" data="0.0033;0.0084;0.049;0.0058;0.019;0.0029;0.038;"/>
+			<col name="asyNegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="asyNegErr" data="0.0033;0.0616;0.049;0.0058;0.019;0.0029;0.038;"/>
+			<col name="amp" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="amp" data="0.98;0.224;0.048;0.059;0.086;0.041;0.075;"/>
+			<col name="ampPosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="ampPosErr" data="0.55;0.023;0.018;0.015;0.036;0.011;0.925;"/>
+			<col name="ampNegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="ampNegErr" data="0.55;0.023;0.018;0.015;0.036;0.011;0.075;"/>
+			<col name="phase" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="phase" data="297.3;53.2;23.1;6.7e-09;0.002;3.5e-06;63.3;"/>
+			<col name="phasePosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="phasePosErr" data="1.8;5;17.8;5.7;-7.8;24.1;35.1;"/>
+			<col name="phaseNegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="phaseNegErr" data="1.8;5;23.1;6.7e-09;0.0018;3.5e-06;32.9;"/>
+			<col name="field" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="field" data="8.8;6.89;103.6;133;121.6;136.1;118.4;"/>
+			<col name="fieldPosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="fieldPosErr" data="0.19;0.63;9;2.6;8.7;3.1;4.2;"/>
+			<col name="fieldNegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="fieldNegErr" data="0.19;0.63;5.6;2.8;6.3;5.1;14;"/>
+			<col name="lambdaT" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="lambdaT" data="0;0;0.66;0.62;1.16;0.45;0.15;"/>
+			<col name="lambdaTPosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="lambdaTPosErr" data="3.9;0.24;0.37;0.32;0.45;0.33;0.84;"/>
+			<col name="lambdaTNegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="lambdaTNegErr" data="3.9;0.24;0.32;0.23;0.37;0.23;0.15;"/>
+			<col name="lambdaL" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="lambdaL" data="4.3;0.199;0.429;0.428;0.451;0.416;0.536;"/>
+			<col name="lambdaLPosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="lambdaLPosErr" data="1.4;0.018;0.028;0.019;0.026;0.011;0.179;"/>
+			<col name="lambdaLNegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="lambdaLNegErr" data="1.4;0.018;0.025;0.018;0.02;0.011;0.09;"/>
+			<col name="asy2" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="asy2" data="0.16;0.16;0.16;0.16;0.16;0.16;0.16;"/>
+			<col name="asy2PosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="asy2PosErr" data="0;0;0;0;0;0;0;"/>
+			<col name="asy2NegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="asy2NegErr" data="0;0;0;0;0;0;0;"/>
+			<col name="sigma" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="sigma" data="0.1077;0.0702;0.01;0.0261;0.0385;0.0192;0.053;"/>
+			<col name="sigmaPosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="sigmaPosErr" data="0.0061;0.0086;0.013;0.0069;0.0056;0.0093;0.019;"/>
+			<col name="sigmaNegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="sigmaNegErr" data="0.0061;0.0086;0.01;0.0092;0.0061;0.0192;0.016;"/>
+			<col name="amp1" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="amp1" data="0.822;0.18;0.59;0.69;0.15;1;0.11;"/>
+			<col name="amp1PosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="amp1PosErr" data="0.047;0.82;0.69;0.52;0.3;0.76;0.51;"/>
+			<col name="amp1NegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="amp1NegErr" data="0.047;0.18;0.69;0.52;0.3;0.76;0.51;"/>
+			<col name="phase1" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="phase1" data="0;0;0;0;0;0;0;"/>
+			<col name="phase1PosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="phase1PosErr" data="0;0;0;0;0;0;0;"/>
+			<col name="phase1NegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="phase1NegErr" data="0;0;0;0;0;0;0;"/>
+			<col name="field1" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="field1" data="11.5;7;45.9;47.61;48.7;47.1;39.7;"/>
+			<col name="field1PosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="field1PosErr" data="9.6;6;2.3;0.99;1;1.9;3.2;"/>
+			<col name="field1NegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="field1NegErr" data="3.6;6;1.8;0.96;1.2;2.4;3.3;"/>
+			<col name="lambdaT1" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="lambdaT1" data="0.83;0;4.5e-09;3.2e-06;1.3e-06;0.14;0;"/>
+			<col name="lambdaT1PosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="lambdaT1PosErr" data="0.19;4.3;0.0857;0.108;0.0762;0.24;3.1;"/>
+			<col name="lambdaT1NegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="lambdaT1NegErr" data="0.83;4.3;4.5e-09;3.2e-06;1.3e-06;0.14;3.1;"/>
+			<col name="lambdaL1" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="lambdaL1" data="0.415;0.415;0.415;0.415;0.415;0.415;0.415;"/>
+			<col name="lambdaL1PosErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="lambdaL1PosErr" data="0;0;0;0;0;0;0;"/>
+			<col name="lambdaL1NegErr" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="lambdaL1NegErr" data="0;0;0;0;0;0;0;"/>
+			<col name="CHISQ" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="CHISQ" data="710.7;894.7;833.2;854.5;816.6;868.9;753.7;"/>
+			<col name="NDF" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="NDF" data="806;806;806;806;806;806;806;"/>
+			<col name="CHISQred" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="CHISQred" data="0.881762;1.11005;1.03375;1.06017;1.01315;1.07804;0.935112;"/>
+			<col name="RUN" type="6" num="0" prec="13" plot="2" width="100" stat="0" comment="RUN" data="5809;5810;5811;5812;5813;5816;5822;"/>
+		</tab>
+	</window>
+	<window type="3" name="Graph1" date="2459668.4510426" x="3" y="299" w="446" h="423" dpi="96">
+		<layout cw="438" ch="369" w="500" h="375" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="3" y="4" w="431" h="362" autoscale="1" maxMajorTicks="20" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00684932" y="0.0108401" w="0.984018" h="0.98103"/>
+			<title text="Title" color="#000000" font="Sans Serif,8.70541,-1,5,75,0,0,0,0,0" align="4228" fmw="33"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="49" y="62" w="329" h="266" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="1"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="1"/>
+			</grid>
+			<curve type="2" z="21" table="zerofield_SL_internFld" x="dataT" y="field" from="0" to="-1" line="1" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+				<errors type="1" z="22" table="zerofield_SL_internFld" col="fieldPosErr" from="0" to="-1" lw="1" lc="#000000" cap="8" plus="1" minus="1" symb="1"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="140" step="0" maj="8" min="5" type="0"/>
+				<ticks maj="1" majl="7" min="1" minl="4"/>
+				<title text="%(?Y)" color="#000000" font="Sans Serif,7.25451,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="34"/>
+				<labels space="4" font="Sans Serif,7.25451,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="7" min="1" minl="4"/>
+				<title text="%(?Y)" color="#000000" font="Sans Serif,7.25451,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="34"/>
+				<labels space="4" font="Sans Serif,7.25451,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-1" to="5" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="7" min="1" minl="4"/>
+				<title text="%(?X)" color="#000000" font="Sans Serif,7.25451,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="34"/>
+				<labels space="4" font="Sans Serif,7.25451,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="7" min="1" minl="4"/>
+				<title text="%(?X)" color="#000000" font="Sans Serif,7.25451,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="34"/>
+				<labels space="4" font="Sans Serif,7.25451,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<item type="2" x="-0.843687374749499" y="134.75935828877" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Sans Serif,7.25451,-1,0,50,0,0,0,0,0" text="\l(1)%(1)"/>
+		</tab>
+	</window>
+	<window type="3" name="Graph2" date="2459668.4517115" x="452" y="304" w="551" h="417" dpi="96">
+		<layout cw="543" ch="363" w="500" h="375" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="4" y="4" w="534" h="356" autoscale="1" maxMajorTicks="20" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00736648" y="0.0110193" w="0.983425" h="0.980716"/>
+			<title text="Title" color="#000000" font="Sans Serif,8.56112,-1,5,75,0,0,0,0,0" align="4228" fmw="33"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="53" y="61" w="430" h="262" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="1"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="1"/>
+			</grid>
+			<curve type="2" z="21" table="zerofield_SL_internFld" x="dataT" y="amp" from="0" to="-1" line="1" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+				<errors type="1" z="22" table="zerofield_SL_internFld" col="ampPosErr" from="0" to="-1" lw="1" lc="#000000" cap="8" plus="1" minus="1" symb="1"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-1" to="2" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="6" min="1" minl="4"/>
+				<title text="%(?Y)" color="#000000" font="Sans Serif,7.13427,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="34"/>
+				<labels space="4" font="Sans Serif,7.13427,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="6" min="1" minl="4"/>
+				<title text="%(?Y)" color="#000000" font="Sans Serif,7.13427,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="34"/>
+				<labels space="4" font="Sans Serif,7.13427,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-1" to="5" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="6" min="1" minl="4"/>
+				<title text="%(?X)" color="#000000" font="Sans Serif,7.13427,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="34"/>
+				<labels space="4" font="Sans Serif,7.13427,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="6" min="1" minl="4"/>
+				<title text="%(?X)" color="#000000" font="Sans Serif,7.13427,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="34"/>
+				<labels space="4" font="Sans Serif,7.13427,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<item type="2" x="-0.831663326653307" y="1.88770053475936" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Sans Serif,7.13427,-1,0,50,0,0,0,0,0" text="\l(1)%(1)"/>
+		</tab>
+	</window>
+	<window type="3" name="Graph3" date="2459668.458488" x="1006" y="324" w="518" h="397" active="1" dpi="96">
+		<layout cw="510" ch="343" w="500" h="375" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="4" y="3" w="502" h="336" autoscale="1" maxMajorTicks="20" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00784314" y="0.00874636" w="0.984314" h="0.979592"/>
+			<title text="Title" color="#000000" font="Sans Serif,8.08016,-1,5,75,0,0,0,0,0" align="4228" fmw="32"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="41" y="57" w="412" h="246" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="1"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="1"/>
+			</grid>
+			<curve type="2" z="21" table="zerofield_SL_internFld" x="dataT" y="field1" from="0" to="-1" line="1" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+				<errors type="1" z="22" table="zerofield_SL_internFld" col="field1PosErr" from="0" to="-1" lw="1" lc="#000000" cap="8" plus="1" minus="1" symb="1"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="50" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="5" min="1" minl="4"/>
+				<title text="%(?Y)" color="#000000" font="Sans Serif,6.73347,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="30"/>
+				<labels space="4" font="Sans Serif,6.73347,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="5" min="1" minl="4"/>
+				<title text="%(?Y)" color="#000000" font="Sans Serif,6.73347,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="30"/>
+				<labels space="4" font="Sans Serif,6.73347,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-1" to="5" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="5" min="1" minl="4"/>
+				<title text="%(?X)" color="#000000" font="Sans Serif,6.73347,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="31"/>
+				<labels space="4" font="Sans Serif,6.73347,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="5" min="1" minl="4"/>
+				<title text="%(?X)" color="#000000" font="Sans Serif,6.73347,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="31"/>
+				<labels space="4" font="Sans Serif,6.73347,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<item type="2" x="-0.843687374749499" y="48.1283422459893" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Sans Serif,6.73347,-1,0,50,0,0,0,0,0" text="\l(1)%(1)"/>
+		</tab>
+	</window>
+	<window type="3" name="Graph4" date="2459668.4594689" x="1006" y="7" w="527" h="318" dpi="96">
+		<layout cw="519" ch="264" w="500" h="375" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="4" y="3" w="511" h="259" autoscale="1" maxMajorTicks="20" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00770713" y="0.0113636" w="0.984586" h="0.981061"/>
+			<title text="Title" color="#000000" font="Sans Serif,6.22846,-1,5,75,0,0,0,0,0" align="4228" fmw="27"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="40" y="48" w="435" h="185" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="1"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="1"/>
+			</grid>
+			<curve type="2" z="21" table="zerofield_SL_internFld" x="dataT" y="amp1" from="0" to="-1" line="1" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+				<errors type="1" z="22" table="zerofield_SL_internFld" col="amp1PosErr" from="0" to="-1" lw="1" lc="#000000" cap="8" plus="1" minus="1" symb="1"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-1" to="2" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="4" min="1" minl="2"/>
+				<title text="%(?Y)" color="#000000" font="Sans Serif,5.19038,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="24"/>
+				<labels space="4" font="Sans Serif,5.19038,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="4" min="1" minl="2"/>
+				<title text="%(?Y)" color="#000000" font="Sans Serif,5.19038,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="24"/>
+				<labels space="4" font="Sans Serif,5.19038,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-1" to="5" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="4" min="1" minl="2"/>
+				<title text="%(?X)" color="#000000" font="Sans Serif,5.19038,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="24"/>
+				<labels space="4" font="Sans Serif,5.19038,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="4" min="1" minl="2"/>
+				<title text="%(?X)" color="#000000" font="Sans Serif,5.19038,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="24"/>
+				<labels space="4" font="Sans Serif,5.19038,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<item type="2" x="-0.831663326653307" y="1.88770053475936" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Sans Serif,5.19038,-1,0,50,0,0,0,0,0" text="\l(1)%(1)"/>
+		</tab>
+	</window>
+</qti>

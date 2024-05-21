@@ -1,0 +1,67 @@
+Ce3PtIn11 T= 4K, TFx=15A  (23G), NSR
+###############################################################
+FITPARAMETER
+#      Nr. Name        Value     Step      Pos_Error  Boundaries
+        1 alpha       1.06925   -0.00091    0.00091     0       none    
+        2 asy         0.0743    0           none        0       none    
+        3 phase       0.50      -0.23       0.23        
+        4 field       23.157    -0.019      0.019       0       none    
+        5 lamb        0.1105    -0.0078     0.0077      0       100     
+        6 asy2        0.16      0           none        0       none    
+        7 phase2      0.3       0           none        
+        8 field2      23.183    0           none        0       none    
+        9 rate        0.0762    -0.0067     0.0065      0       100     
+
+###############################################################
+THEORY
+asymmetry      2
+TFieldCos      3  fun1       (phase frequency)
+simplExpo      5          (rate)
++
+asymmetry      6
+TFieldCos      3  fun1       (phase frequency)
+simpleGss      9          (rate)
+
+###############################################################
+FUNCTIONS
+fun1 = par4 * gamma_mu
+#fun2 = par8 * gamma_mu
+
+###############################################################
+RUN /musr/m15data/2020/005808 M15 TRIUMF MUD   (name beamline institute data-file-format)
+fittype         2         (asymmetry fit)
+alpha           1
+map             0    0    0    0    0    0    0    0    0    0
+forward         1 
+backward        2 
+t0              980.0   970.0   
+background      70      950     70      950        # estimated bkg: 11.7420 / 8.3307
+data            1031    25600   1022    25600   
+fit             0.01    9      
+packing         100
+
+###############################################################
+COMMANDS
+MINIMIZE
+MINOS
+SAVE
+
+###############################################################
+FOURIER
+units            Gauss   # units either 'Gauss', 'Tesla', 'MHz', or 'Mc/s'
+fourier_power    18
+apodization      STRONG  # NONE, WEAK, MEDIUM, STRONG
+plot             REAL    # REAL, IMAG, REAL_AND_IMAG, POWER, PHASE
+phase            par3
+#range_for_phase_correction 50.0 70.0
+range            0    200
+
+###############################################################
+PLOT 2   (asymmetry plot)
+runs     1   
+range    0   10   -0.3   0.3
+view_packing 200
+
+###############################################################
+STATISTIC --- 2022-03-10 13:20:03
+  chisq = 271.1, NDF = 225, chisq/NDF = 1.204782

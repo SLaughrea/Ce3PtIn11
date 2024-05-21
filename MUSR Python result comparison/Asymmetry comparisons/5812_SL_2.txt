@@ -1,0 +1,64 @@
+Ce3PtIn11 T= 0.2 K, ZF, NSR
+###############################################################
+FITPARAMETER
+#	Nr. Name        Value     Step      Pos_Error  Boundaries
+        1 alpha       1.14835   -0.00061    0.00061     0       none    
+        2 asy         0.07      0           none        0       0.33    
+        3 amp         0.079     0           none        0       1       
+        4 phase       0.000011  0           none        0       360     
+        5 field       140.9     0           none        50      150     
+        6 tau         -0.000002 0           none        0       1       
+        7 asy2        0.16      0           none        0       0.33    
+        8 lambda2     0         0           none        
+
+###############################################################
+THEORY
+asymmetry      2
+simplExpo      6          (rate)
++
+asymmetry      7
+
+
+###############################################################
+FUNCTIONS
+fun1 = gamma_mu * par5
+
+
+###############################################################
+RUN /musr/m15data/2020/005812 M15 TRIUMF MUD   (name beamline institute data-file-format)
+fittype         2         (asymmetry fit)
+alpha           1
+map             0    0    0    0    0    0    0    0    0    0
+forward         1 
+backward        2 
+t0              980.0   970.0   
+background      70      950     70      950        # estimated bkg: 21.4580 / 13.7250
+data            1031    25600   1022    25600   
+fit             0.01    8      
+packing         25
+
+###############################################################
+COMMANDS
+MINIMIZE
+MINOS
+SAVE
+
+###############################################################
+FOURIER
+units            Gauss   # units either 'Gauss', 'Tesla', 'MHz', or 'Mc/s'
+fourier_power    18
+apodization      STRONG  # NONE, WEAK, MEDIUM, STRONG
+plot             REAL    # REAL, IMAG, REAL_AND_IMAG, POWER, PHASE
+phase            par3
+#range_for_phase_correction 50.0 70.0
+range            0    200
+
+###############################################################
+PLOT 2   (asymmetry plot)
+runs     1   
+range    0   8   0.15   0.25
+view_packing 200
+
+###############################################################
+STATISTIC --- 2022-03-18 10:24:13
+  chisq = 5996.5, NDF = 816, chisq/NDF = 7.348620
