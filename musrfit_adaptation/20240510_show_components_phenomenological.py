@@ -1432,18 +1432,18 @@ def openSingleFile(filename):
 START LOOP OVER FILES HERE
 """
 # 2020 ZF
-#filenames = ["005813.txt","005812.txt","005816.txt","005811.txt","005810.txt","005809.txt"]
+#filenames = ["./runfiles/005813.txt","./runfiles/005812.txt","./runfiles/005816.txt","./runfiles/005811.txt","./runfiles/005810.txt","./runfiles/005809.txt"]
 #temperature = [0.019,0.228,0.423,0.999,2.05,4.012]
 
 # 2021 ZF
-#filenames = ["005138.txt","005137.txt","005136.txt","005142.txt","005139.txt","005141.txt","005140.txt"]
+#filenames = ["./runfiles/005138.txt","./runfiles/005137.txt","./runfiles/005136.txt","./runfiles/005142.txt","./runfiles/005139.txt","./runfiles/005141.txt","./runfiles/005140.txt"]
 #temperature = [0.056,0.115,0.228,0.427,1.195,1.497,1.799]
 
 # 2020 + 2021 ZF
-#filenames = ["005813.txt","005138.txt","005137.txt","005136.txt","005812.txt","005816.txt","005142.txt","005811.txt","005139.txt","005141.txt","005140.txt","005810.txt","005809.txt"]
+#filenames = ["./runfiles/005813.txt","./runfiles/005138.txt","./runfiles/005137.txt","./runfiles/005136.txt","./runfiles/005812.txt","./runfiles/005816.txt","./runfiles/005142.txt","./runfiles/005811.txt","./runfiles/005139.txt","./runfiles/005141.txt","./runfiles/005140.txt","./runfiles/005810.txt","./runfiles/005809.txt"]
 #temperature = [0.019,0.056,0.115,0.227,0.228,0.423,0.427,0.999,1.195,1.497,1.799,2.05,4.012]
 
-filenames = ["005813.txt"]#,"005138.txt","005137.txt","005136.txt","005812.txt","005816.txt","005142.txt","005811.txt","005139.txt","005141.txt","005140.txt","005810.txt","005809.txt"]
+filenames = ["./runfiles/005813.txt"]#,"./runfiles/005138.txt","./runfiles/005137.txt","./runfiles/005136.txt","./runfiles/005812.txt","./runfiles/005816.txt","./runfiles/005142.txt","./runfiles/005811.txt","./runfiles/005139.txt","./runfiles/005141.txt","./runfiles/005140.txt","./runfiles/005810.txt","./runfiles/005809.txt"]
 temperature = [0.019]#,0.056,0.115,0.227,0.228,0.423,0.427,0.999,1.195,1.497,1.799,2.05,4.012]
 
 
@@ -1452,14 +1452,14 @@ save = False
 # show posterior pdfs
 showResults = True
 
-#filenames = ["005813.txt"]
+#filenames = ["./runfiles/005813.txt"]
 #temperature = [0.019]
 
 
 
 
 # 2020 LF 1kG runs
-#filenames = ["005820.txt","005819.txt","005818.txt","005817.txt"]
+#filenames = ["./runfiles/005820.txt","./runfiles/005819.txt","./runfiles/005818.txt","./runfiles/005817.txt"]
 #temperature = [0.02,1.000,2.05,4.011]
 
 #plt.figure(figsize=(10,10))
@@ -1495,9 +1495,9 @@ for filename in filenames:
     for i in range(len(colors)):
         colors[i] = hex_to_rgb(colors[i])
     
-    if filename == "005813.txt" or filename == "005812.txt" or filename == "005816.txt"\
-    or filename == "005811.txt" or filename == "005810.txt" or filename == "005809.txt"\
-    or filename == "005820.txt" or filename == "005819.txt" or filename == "005818.txt" or filename == "005817.txt":
+    if filename == "./runfiles/005813.txt" or filename == "./runfiles/005812.txt" or filename == "./runfiles/005816.txt"\
+    or filename == "./runfiles/005811.txt" or filename == "./runfiles/005810.txt" or filename == "./runfiles/005809.txt"\
+    or filename == "./runfiles/005820.txt" or filename == "./runfiles/005819.txt" or filename == "./runfiles/005818.txt" or filename == "./runfiles/005817.txt":
         alpha = 1.0746 # 5808_srd.msr
         errAlpha = -0.001
         errBeta = -0.006
@@ -1508,8 +1508,8 @@ for filename in filenames:
         rlxAg = 0.0091 #rlxAg found with 5808_srd.msr
 
         
-    if filename == "005138.txt" or filename == "005137.txt" or filename == "005136.txt" or filename == "005142.txt"\
-    or filename == "005139.txt" or filename == "005141.txt" or filename == "005140.txt":
+    if filename == "./runfiles/005138.txt" or filename == "./runfiles/005137.txt" or filename == "./runfiles/005136.txt" or filename == "./runfiles/005142.txt"\
+    or filename == "./runfiles/005139.txt" or filename == "./runfiles/005141.txt" or filename == "./runfiles/005140.txt":
         alpha = 0.9632 # 5144_srd.msr
         errAlpha = -0.0011
         errBeta = -0.0068
@@ -1520,7 +1520,7 @@ for filename in filenames:
         rlxAg = 0.0091 #rlxAg found with 5808_srd.msr
 
     
-    #filename = "005813.txt"
+    #filename = "./runfiles/005813.txt"
     f,b,l,r = clean(filename)
     binT, binF, errF, binB, errB, binA, errA=getErrorBinA(f,b)
 
@@ -1556,12 +1556,12 @@ for filename in filenames:
     ranges[8] = [10,70,55]          #fieldCe1
     
     
-    if filename == "005141.txt" or filename == "005140.txt":
+    if filename == "./runfiles/005141.txt" or filename == "./runfiles/005140.txt":
         ranges[5] = [70,170,100]        #fieldCe2
         ranges[8] = [10,70,55]          #fieldCe1
     
     
-    if filename == "005810.txt" or filename == "005809.txt":
+    if filename == "./runfiles/005810.txt" or filename == "./runfiles/005809.txt":
         ranges[3] = [0,0,0]
         ranges[4] = [0,0,0]
         ranges[5] = [0,0,0]
@@ -1610,11 +1610,11 @@ for filename in filenames:
     # save_10_ + filename is the one slightly bounded from 30 to 50 ce2 and 110 145
 
     # save_25_expanded_bound + filename is the one from 20 to 70 and 110 to 160
-    
-    
+    #./runfiles/
+
     # free bounds
     #savename = "save_10_" + filename + "_posterior_pdf"
-    savename = "save_25_expanded_bound" + filename + "_posterior_pdf"
+    savename = "./dynesty_saves/save_25_expanded_bound" + filename[11:] + "_posterior_pdf"
     
     if save:
         
@@ -1644,7 +1644,7 @@ for filename in filenames:
     bestPeaksTable = np.reshape(bestPeaksTable,(-1,bestPeaks.size))
     errBestPeaksTable = np.append(errBestPeaksTable,[errBestPeaks])
     errBestPeaksTable = np.reshape(errBestPeaksTable,(-1,errBestPeaks.size))
-    #if filename == "005813.txt":
+    #if filename == "./runfiles/005813.txt":
     #    bestPeaks = [0.344,1.0,0.003,0.0039,1.266,126.739,0.0015,0,49]
     print(bestPeaks)
     plotResults(filename,binT,binA,errA,bestPeaks)
@@ -1677,167 +1677,3 @@ labels = np.append(labels,r"$A_\mathrm{static}$")
 
 bayes = True
 musr = True
-
-"""
-def read_musr(filename):
-    # import 
-    musrFile = filename
-    
-    with open(musrFile) as fp:
-        reader = csv.reader(fp,delimiter=",",quotechar='"')
-        data_read = [row for row in reader]
-    musrArray = np.array(data_read)
-    
-    #rlxStatic,betaStatic,asyTail,asyCe1,rlxCe1,fieldCe1,asyCe2,rlxCe2,fieldCe2
-    
-    # make an array with only the chosen columns of initial array
-    musrValue = []
-    musrIndexValue = [23,53,26,35,38,32,47,50,44]
-    
-    musrIndexErr = [24,54,27,36,39,33,48,51,45]
-    musrErr = []
-    
-    for i in range(len(musrIndexValue)):
-        index = musrIndexValue[i]
-        if i==0:
-            musrValue = np.append(musrValue,musrArray[1:,index].reshape(-1,1))
-            continue
-        if i==1:
-            musrValue = np.concatenate((musrValue.reshape(-1,1),musrArray[1:,index].reshape(-1,1)),axis=1)
-            continue
-        musrValue = np.concatenate((musrValue,musrArray[1:,index].reshape(-1,1)),axis=1)
-    
-    for i in range(len(musrIndexErr)):
-        index = musrIndexErr[i]
-        if i==0:
-            musrErr = np.append(musrErr,musrArray[1:,index].reshape(-1,1))
-            continue
-        if i==1:
-            musrErr = np.concatenate((musrErr.reshape(-1,1),musrArray[1:,index].reshape(-1,1)),axis=1)
-            continue
-        musrErr = np.concatenate((musrErr,musrArray[1:,index].reshape(-1,1)),axis=1)
-    
-    
-    
-    musrValue = musrValue.astype(float)
-    musrErr = musrErr.astype(float)
-    
-    
-    A_static = asysample - musrValue[:,2] - musrValue[:,3] - musrValue[:,6]
-    A_static = A_static.reshape(-1,1)
-    asysample_err = 0.00065
-    errA_static = np.sqrt(asysample_err**2+musrErr[:,2]**2+musrErr[:,3]**2+musrErr[:,6]**2)
-    errA_static = errA_static.reshape(-1,1)
-    musrValue = np.concatenate((musrValue,A_static),axis=1)
-    
-    musrErr = np.concatenate((musrErr,errA_static),axis=1)
-    return musrValue,musrErr
-
-
-
-musrValue2020_2021,musrErr2020_2021=read_musr("phenomenological.csv")
-musrValue2020,musrErr2020=read_musr("phenomenological_2020.csv")
-musrValue2021,musrErr2021=read_musr("phenomenological_2021.csv")
-temp2020_2021 = [0.019,0.056,0.115,0.227,0.228,0.423,0.427,0.999,1.195,1.497,1.799,2.05,4.012]
-temp2020 = [0.019,0.228,0.423,0.999,2.05,4.012]
-temp2021 = [0.056,0.115,0.227,0.427,1.195,1.497,1.799]
-units = [r"$(μs^{-1})$","","","",r"$(μs^{-1})$","(G)","",r"$(μs^{-1})$","(G)",""]
-
-#2020: index 0 4 5 7 11 12
-#2021: index 1 2 3 6 8 9 10
-
-bestPeaksTable2020 = bestPeaksTable[:,:]
-errBestPeaksTable2020 = errBestPeaksTable[:,:]
-
-bestPeaksTable2021 = bestPeaksTable[:,:]
-errBestPeaksTable2021 = errBestPeaksTable[:,:]
-
-bestPeaksTable2020 = np.delete(bestPeaksTable2020[:,:],obj=[1,2,3,6,8,9,10],axis=0)
-errBestPeaksTable2020 = np.delete(errBestPeaksTable2020[:,:],obj=[1,2,3,6,8,9,10],axis=0)
-bestPeaksTable2021 = np.delete(bestPeaksTable2021[:,:],obj=[0,4,5,7,11,12],axis=0)
-errBestPeaksTable2021 = np.delete(errBestPeaksTable2021[:,:],obj=[0,4,5,7,11,12],axis=0)
-
-
-
-# loop through parameters
-for i in range(len(labels)):
-    fig, ax = plt.subplots(figsize=(8,8),dpi=100)
-    
-    
-    if musr:
-        min2020 = musrErr2020[:,i]
-        max2020 = musrErr2020[:,i]
-        min2021 = musrErr2021[:,i]
-        max2021 = musrErr2021[:,i]
-        min20202021= musrErr2020_2021[:,i]
-        max20202021= musrErr2020_2021[:,i]
-                
-        # errorbars can't go lower than 0 for relaxation
-        if i == 4 or i == 7 :
-            for j in range(len(min2020)):
-                min2020[j] = np.minimum(musrValue2020[j,i],min2020[j])
-                min2021[j] = np.minimum(musrValue2021[j,i],min2021[j])
-            for j in range(len(min20202021)):
-                min20202021[j] = np.minimum(musrValue2020_2021[j,i],min20202021[j])
-            
-        
-        yerr2020 = [min2020,max2020]
-        yerr2021 = [min2021,max2021]
-        yerr20202021 = [min20202021,max20202021]
-        
-        #ax.errorbar(temp2020,musrValue2020[:,i],yerr2020,ls='none',fillstyle='none', color="black",ecolor="black",marker="D",label="{}: MuSRFit 2020".format(labels[i]),markersize=8)
-        #ax.errorbar(temp2021,musrValue2021[:,i],yerr2021,ls='none',fillstyle='none', color="red",ecolor="red",marker="D",label="{}: MuSRFit 2021".format(labels[i]),markersize=8)
-        ax.errorbar(temp2020_2021,musrValue2020_2021[:,i],yerr20202021,ls='none',fillstyle='none', color="red",ecolor="red",marker="D",label="{}: MuSRFit 2020+2021".format(labels[i]),markersize=8)
-    if bayes:
-        
-        min2020 = errBestPeaksTable2020[:,i]
-        max2020 = errBestPeaksTable2020[:,i]
-        min2021 = errBestPeaksTable2021[:,i]
-        max2021 = errBestPeaksTable2021[:,i]
-        min20202021= errBestPeaksTable[:,i]
-        max20202021= errBestPeaksTable[:,i]
-                
-        # errorbars can't go lower than 0 for relaxation
-        if i == 4 or i == 7 :
-            for j in range(len(min2020)):
-                min2020[j] = np.minimum(bestPeaksTable2020[j,i],min2020[j])
-                min2021[j] = np.minimum(bestPeaksTable2021[j,i],min2021[j])
-            for j in range(len(min20202021)):
-                min20202021[j] = np.minimum(bestPeaksTable[j,i],min20202021[j])
-            
-        
-        yerr2020 = [min2020,max2020]
-        yerr2021 = [min2021,max2021]
-        yerr20202021 = [min20202021,max20202021]
-        
-        
-        
-        #ax.errorbar(temp2020,bestPeaksTable2020[:,i],errBestPeaksTable2020[:,i],ls='none',fillstyle='none',color="orange",ecolor="orange",marker="o",label="{}: Dynesty 2020".format(labels[i]),markersize=8)
-        #ax.errorbar(temp2021,bestPeaksTable2021[:,i],errBestPeaksTable2021[:,i],ls='none',fillstyle='none',color="green",ecolor="green",marker="o",label="{}: Dynesty 2021".format(labels[i]),markersize=8)
-        ax.errorbar(temp2020_2021,bestPeaksTable[:,i],errBestPeaksTable[:,i],ls='none',fillstyle='none',color="green",ecolor="green",marker="o",label="{}: Dynesty 2020+2021".format(labels[i]),markersize=8)
-
-    #plt.title(labels[i])
-    plt.axis()
-    plt.xlabel("T(K)",fontsize=14)
-    plt.ylabel("{} {}".format(labels[i],units[i]),fontsize=14)
-    plt.grid()
-    plt.legend(fontsize=12)
-    plt.show()
-
-"""
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    

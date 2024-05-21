@@ -87,10 +87,10 @@ runParam = [
 "14 Ce3PtIn11 1.000(0.000)K	23 Gauss	             8272 	 DR",
 "15 Ce3PtIn11 0.712(0.000)K	0 G	                     10917 	 DR"]
 """
-path = "C:/Users/User/OneDrive - Universite de Montreal/Masters/Codes/RunFiles/"
-all_runs = ["005807.txt","005808.txt","005809.txt","005810.txt","005811.txt","005812.txt","005813.txt","005814.txt","005815.txt","005816.txt","005817.txt","005818.txt","005819.txt","005820.txt","005821.txt","005822.txt"]
+path = ""
+all_runs = ["./runfiles/005807.txt","./runfiles/005808.txt","./runfiles/005809.txt","./runfiles/005810.txt","./runfiles/005811.txt","./runfiles/005812.txt","./runfiles/005813.txt","./runfiles/005814.txt","./runfiles/005815.txt","./runfiles/005816.txt","./runfiles/005817.txt","./runfiles/005818.txt","./runfiles/005819.txt","./runfiles/005820.txt","./runfiles/005821.txt","./runfiles/005822.txt"]
 all_runs = [path + s for s in all_runs]
-chosen_runs = ["005809.txt","005810.txt","005811.txt","005812.txt","005813.txt","005816.txt","005822.txt"]
+chosen_runs = ["./runfiles/005809.txt","./runfiles/005810.txt","./runfiles/005811.txt","./runfiles/005812.txt","./runfiles/005813.txt","./runfiles/005816.txt","./runfiles/005822.txt"]
 chosen_runs = [path + s for s in chosen_runs]
 all_temps = [2.282,4.011,4.012,2.050,0.999,0.228,0.019,0.019,0.019,0.423,4.011,2.050,1.000,0.020,1.000,0.712]
 
@@ -357,7 +357,7 @@ def fitAsymmetryGaAsOnly(goodBinT,goodBinA,goodErrorBinA,filename):
 
 def convergenceGaAsSample(alpha):
     # clean forward, backward, left and right counts from raw data
-    f,b,l,r=clean(path+"005808.txt")
+    f,b,l,r=clean("./runfiles/005808.txt")
     # clear the bins for this new calculation
     binAsymmetry = np.zeros([int(np.round((len(f)/binSize)))+1])
     # we recalculate asymmetry with correction parameter alpha
@@ -382,7 +382,7 @@ def convergenceGaAsOnly(alpha):
     # set correct temperature for this run
 
     # clean forward, backward, left and right counts from raw data
-    f,b,l,r=clean(path+"005807.txt")
+    f,b,l,r=clean("./runfiles/005807.txt")
 
     # clear the bins for this new calculation
     binAsymmetry = np.zeros([int(np.round((len(f)/binSize)))+1])
@@ -575,7 +575,7 @@ def fitAsymmetryNoField(goodBinT,goodBinA,goodErrorBinA,filename,model):
             #ax.legend(title="\n".join(fit_info),fontsize=12,title_fontsize=12);
             if showLegend == True:
                 ax.legend()
-            plt.savefig(title+".pdf",bbox_inches='tight')
+            plt.savefig("./output&pdf/"+title+".pdf",bbox_inches='tight')
             plt.show()
             
         if model == "cos_KT":
@@ -608,7 +608,7 @@ def fitAsymmetryNoField(goodBinT,goodBinA,goodErrorBinA,filename,model):
             #ax.legend(title="\n".join(fit_info),fontsize=12,title_fontsize=12);
             if showLegend == True:
                 ax.legend()
-            plt.savefig(title+".pdf",bbox_inches='tight')
+            plt.savefig("./output&pdf/"+title+".pdf",bbox_inches='tight')
             plt.show()
 
         if model == "KT3f9":
@@ -641,7 +641,7 @@ def fitAsymmetryNoField(goodBinT,goodBinA,goodErrorBinA,filename,model):
             #ax.legend(title="\n".join(fit_info),fontsize=12,title_fontsize=12);
             if showLegend == True:
                 ax.legend()
-            plt.savefig(title+".pdf",bbox_inches='tight')
+            plt.savefig("./output&pdf/"+title+".pdf",bbox_inches='tight')
             plt.show()
         
         #for i in range(len(vector)):
@@ -691,7 +691,7 @@ def initialization():
     global sigma
     global asy_bkgd
     # clean forward, backward, left and right counts from raw data
-    f,b,l,r=clean(path+"005807.txt")
+    f,b,l,r=clean("./runfiles/005807.txt")
     # convergence of alpha and asymmetry calculation for GaAs with sample (run 005808.txt)
     # These are the calculations to find the asymmetry due to the GaAs + sample.
     # It allows to determine how much the detectors differ, which is the alpha.
@@ -841,7 +841,7 @@ def plotParameterOverTime(parameter,dict_parameter):
     if showTitles == True:
         plt.title(title)  
     #ax.legend(title="\n".join(fit_info),fontsize=12,title_fontsize=12);
-    plt.savefig(title+".pdf",dpi=600,bbox_inches='tight')
+    plt.savefig("./output&pdf/"+title+".pdf",dpi=600,bbox_inches='tight')
     plt.show()
 #%% main
 

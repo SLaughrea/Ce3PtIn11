@@ -1390,17 +1390,17 @@ def openSingleFile(filename):
 START LOOP OVER FILES HERE
 """
 # 2020 ZF
-#filenames = ["005813.txt","005812.txt","005816.txt","005811.txt","005810.txt","005809.txt"]
+#filenames = [./runfiles/005813.txt",./runfiles/005812.txt",./runfiles/005816.txt",./runfiles/005811.txt",./runfiles/005810.txt",./runfiles/005809.txt"]
 #temperature = [0.019,0.228,0.423,0.999,2.05,4.012]
 
 # 2021 ZF
-#filenames = ["005138.txt","005137.txt","005136.txt","005142.txt","005139.txt","005141.txt","005140.txt"]
+#filenames = [./runfiles/005138.txt",./runfiles/005137.txt",./runfiles/005136.txt",./runfiles/005142.txt",./runfiles/005139.txt",./runfiles/005141.txt",./runfiles/005140.txt"]
 #temperature = [0.056,0.115,0.228,0.427,1.195,1.497,1.799]
 
 # 2020 + 2021 ZF
-filenames = ["005813.txt","005138.txt","005137.txt","005136.txt","005812.txt","005816.txt","005142.txt","005811.txt","005139.txt","005141.txt","005140.txt","005810.txt","005809.txt"]
+filenames = ["./runfiles/005813.txt","./runfiles/005138.txt","./runfiles/005137.txt","./runfiles/005136.txt","./runfiles/005812.txt","./runfiles/005816.txt","./runfiles/005142.txt","./runfiles/005811.txt","./runfiles/005139.txt","./runfiles/005141.txt","./runfiles/005140.txt","./runfiles/005810.txt","./runfiles/005809.txt"]
 temperature = [0.019,0.056,0.115,0.227,0.228,0.423,0.427,0.999,1.195,1.497,1.799,2.05,4.012]
-#filenames = ["005813.txt"]#,"005138.txt","005137.txt","005136.txt","005812.txt","005816.txt","005142.txt","005811.txt","005139.txt","005141.txt","005140.txt","005810.txt","005809.txt"]
+#filenames = [./runfiles/005813.txt"]#,./runfiles/005138.txt",./runfiles/005137.txt",./runfiles/005136.txt",./runfiles/005812.txt",./runfiles/005816.txt",./runfiles/005142.txt",./runfiles/005811.txt",./runfiles/005139.txt",./runfiles/005141.txt",./runfiles/005140.txt",./runfiles/005810.txt",./runfiles/005809.txt"]
 #temperature = [0.019]#,0.056,0.115,0.227,0.228,0.423,0.427,0.999,1.195,1.497,1.799,2.05,4.012]
 
 
@@ -1409,14 +1409,14 @@ save = False
 # show posterior pdfs
 showResults = False
 
-#filenames = ["005813.txt"]
+#filenames = [./runfiles/005813.txt"]
 #temperature = [0.019]
 
 
 
 
 # 2020 LF 1kG runs
-#filenames = ["005820.txt","005819.txt","005818.txt","005817.txt"]
+#filenames = [./runfiles/005820.txt",./runfiles/005819.txt",./runfiles/005818.txt",./runfiles/005817.txt"]
 #temperature = [0.02,1.000,2.05,4.011]
 
 #plt.figure(figsize=(10,10))
@@ -1452,9 +1452,9 @@ for filename in filenames:
     for i in range(len(colors)):
         colors[i] = hex_to_rgb(colors[i])
     
-    if filename == "005813.txt" or filename == "005812.txt" or filename == "005816.txt"\
-    or filename == "005811.txt" or filename == "005810.txt" or filename == "005809.txt"\
-    or filename == "005820.txt" or filename == "005819.txt" or filename == "005818.txt" or filename == "005817.txt":
+    if filename == "./runfiles/005813.txt" or filename == "./runfiles/005812.txt" or filename == "./runfiles/005816.txt"\
+    or filename == "./runfiles/005811.txt" or filename == "./runfiles/005810.txt" or filename == "./runfiles/005809.txt"\
+    or filename == "./runfiles/005820.txt" or filename == "./runfiles/005819.txt" or filename == "./runfiles/005818.txt" or filename == "./runfiles/005817.txt":
         alpha = 1.0746 # 5808_srd.msr
         errAlpha = -0.001
         errBeta = -0.006
@@ -1465,8 +1465,8 @@ for filename in filenames:
         rlxAg = 0.0091 #rlxAg found with 5808_srd.msr
 
         
-    if filename == "005138.txt" or filename == "005137.txt" or filename == "005136.txt" or filename == "005142.txt"\
-    or filename == "005139.txt" or filename == "005141.txt" or filename == "005140.txt":
+    if filename == "./runfiles/005138.txt" or filename == "./runfiles/005137.txt" or filename == "./runfiles/005136.txt" or filename == "./runfiles/005142.txt"\
+    or filename == "./runfiles/005139.txt" or filename == "./runfiles/005141.txt" or filename == "./runfiles/005140.txt":
         alpha = 0.9632 # 5144_srd.msr
         errAlpha = -0.0011
         errBeta = -0.0068
@@ -1477,7 +1477,7 @@ for filename in filenames:
         rlxAg = 0.0091 #rlxAg found with 5808_srd.msr
 
     
-    #filename = "005813.txt"
+    #filename = ./runfiles/005813.txt"
     f,b,l,r = clean(filename)
     binT, binF, errF, binB, errB, binA, errA=getErrorBinA(f,b)
 
@@ -1514,7 +1514,7 @@ for filename in filenames:
     
     
     
-    if filename == "005810.txt" or filename == "005809.txt":
+    if filename == "./runfiles/005810.txt" or filename == "./runfiles/005809.txt":
         ranges[3] = [0,0,0]
         ranges[4] = [0,0,0]
         ranges[5] = [0,0,0]
@@ -1567,10 +1567,9 @@ for filename in filenames:
 
     # save_25_expanded_bound + filename is the one from 20 to 70 and 110 to 160
     
-    
     # free bounds
     #savename = "to_show_iterations_colored_bands"
-    savename = "save_Ce2lowbound70_" + filename + "_posterior_pdf"
+    savename = "./dynesty_saves/save_Ce2lowbound70_" + filename[11:] + "_posterior_pdf"
     #savename = "save_10_" + filename + "_posterior_pdf"
     #savename = "save_diffStatic" + filename + "_posterior_pdf" #CHOSEN lambda static comparison
     #savename = "save_25_expanded_bound" + filename + "_posterior_pdf" # chosen for temperature dependence
@@ -1595,7 +1594,7 @@ for filename in filenames:
     peaks_table_all5, peaks_error_table_all5, peaks_rel_height_table_all5=posterior_peaks(posterior_pdf_all5,showResults=showResults)
     
     # if T = 2 or 4K
-    if filename == "005810.txt" or filename == "005809.txt":
+    if filename == "./runfiles/005810.txt" or filename == "./runfiles/005809.txt":
         temp_table = peaks_error_table_all5[:]
         for element in range(3,9):
             temp_table[element] = [[0,0]]
@@ -1619,7 +1618,7 @@ for filename in filenames:
     bestPeaksTable = np.reshape(bestPeaksTable,(-1,bestPeaks.size))
     errBestPeaksTable = np.append(errBestPeaksTable,[errBestPeaks])
     errBestPeaksTable = np.reshape(errBestPeaksTable,(-1,errBestPeaks.size))
-    #if filename == "005813.txt":
+    #if filename == ./runfiles/005813.txt":
     #    bestPeaks = [0.344,1.0,0.003,0.0039,1.266,126.739,0.0015,0,49]
     #print(bestPeaks)
     plotResults(filename,binT,binA,errA,bestPeaks)

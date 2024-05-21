@@ -241,17 +241,18 @@ plt.figure(figsize=(8,8),dpi=100)
 plt.ylim(-0.25, 0.25)
 for temp in range(len(filenames)):  
     filename = filenames[temp]
+    filename = "./runfiles/" + filename
     #plt.xlim(0,4*10**-6)
 
     np.random.seed(0)
     tstep = 0.390625*10**-9  # (seconds) time interval of binned data
     tstep *= 10**6    # (microseconds)
     # set gamma
-    gamma=0.0135528 #Hz/G
+    gamma=0.0135528 #MHz/G
     # packing
     binSize =25
     
-    default =200 # starting point of data to analyze
+    default =50 # starting point of data to analyze
     t0 = 1031
     # background to analyze is in the interval [zero,t0-bad]
     bad = 100
@@ -268,16 +269,16 @@ for temp in range(len(filenames)):
 
     
     #2020
-    if filename == "005813.txt" or filename == "005812.txt" or filename == "005816.txt"\
-    or filename == "005808.txt" or filename == "005807.txt"\
-    or filename == "005811.txt" or filename == "005810.txt" or filename == "005809.txt"\
-    or filename == "005820.txt" or filename == "005819.txt" or filename == "005818.txt" or filename == "005817.txt":
+    if filename == "./runfiles/005813.txt" or filename == "./runfiles/005812.txt" or filename == "./runfiles/005816.txt"\
+    or filename == "./runfiles/005808.txt" or filename == "./runfiles/005807.txt"\
+    or filename == "./runfiles/005811.txt" or filename == "./runfiles/005810.txt" or filename == "./runfiles/005809.txt"\
+    or filename == "./runfiles/005820.txt" or filename == "./runfiles/005819.txt" or filename == "./runfiles/005818.txt" or filename == "./runfiles/005817.txt":
         alpha = 1.0746 # 5808_srd.msr
         errAlpha = -0.001
         errBeta = -0.006
         beta = 1.259 # 5808_h12.msr called relasy
         total_asymmetry = 0.06371 # 5808_srd.msr
-        if filename == "005807.txt":
+        if filename == "./runfiles/005807.txt":
             total_asymmetry = 0
         asysample = total_asymmetry
         asybkgd = 0.13877 # 5807.msr
@@ -285,8 +286,8 @@ for temp in range(len(filenames)):
 
     
     #2021
-    if filename == "005138.txt" or filename == "005137.txt" or filename == "005136.txt" or filename == "005142.txt"\
-    or filename == "005144.txt" or filename == "005139.txt" or filename == "005141.txt" or filename == "005140.txt":
+    if filename == "./runfiles/005138.txt" or filename == "./runfiles/005137.txt" or filename == "./runfiles/005136.txt" or filename == "./runfiles/005142.txt"\
+    or filename == "./runfiles/005144.txt" or filename == "./runfiles/005139.txt" or filename == "./runfiles/005141.txt" or filename == "./runfiles/005140.txt":
         alpha = 0.9632 # 5144_srd.msr
         errAlpha = -0.0011
         errBeta = -0.0068
@@ -297,16 +298,26 @@ for temp in range(len(filenames)):
         rlxAg = 0.0091 #rlxAg found with 5808_srd.msr
     
     
+    #2021 penetration depth
+    if filename == "./runfiles/005148.txt" or filename == "./runfiles/005149.txt" or filename == "./runfiles/005150.txt" or filename == "./runfiles/005151.txt": 
+        alpha = 0.87328 # 5144_srd.msr in penetration depth folder with counters 3,4
+        errAlpha = -0.00094
+        errBeta = -0.0053
+        beta = 1.0533 # 5144_h12.msr ?
+
+        asybkgd = 0.1495 # 5131.msr
+
+    
     #2023
-    if filename == "028438.txt":
-        alpha = 1 # 5808_srd.msr
-        errAlpha = 0
-        errBeta = 0
-        beta = 1 # 5808_h12.msr called relasy
-        total_asymmetry = 0 # 5808_srd.msr
+    if filename == "./runfiles/028438.txt" or filename == "./runfiles/028441.txt":
+        alpha = 1.2103 # 5808_srd.msr
+        errAlpha = 0.0012
+        errBeta = 0.0056
+        beta = 1.0234 # 28438_h12.msr called relasy
+        total_asymmetry = 0 # 28438_srd.msr
         asysample = total_asymmetry
         asybkgd = 0 # 5807.msr
-        rlxAg = 0. #rlxAg found with 5808_srd.msr
+        rlxAg = 0. #rlxAg found with 28438_srd.msr
         
         t0 = 670
 
@@ -380,13 +391,13 @@ for temp in range(len(filenames)):
     
     #plotResults(filename, binT, binA,errBinA,i,vector=bestPeaks)
 
-filename = "005807.txt"
+filename = "./runfiles/005807.txt"
 f,b,l,r = clean(filename)
 binT, binF, errBinF, binB, errBinB, binA, errBinA, dadf, dadb=getErrorBinA(f,b)
 
 binT1,binA1 = binT,binA
 
-filename = "005808.txt"
+filename = "./runfiles/005808.txt"
 f,b,l,r = clean(filename)
 binT, binF, errBinF, binB, errBinB, binA, errBinA, dadf, dadb=getErrorBinA(f,b)
 
